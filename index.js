@@ -3,9 +3,14 @@ import express from 'express'; // importa o Express usando ES Modules
 const app = express(); // cria a aplicação Express
 const PORT = 3000; // porta onde o servidor vai rodar localmente
 
+new Date("2026-04-05T14:30:00.000Z"); 
 // rota GET na raiz — responde com JSON
 app.get('/', (req, res) => {
   res.json({ mensagem: 'Yearbook API está no ar! 🎓' });
+});
+
+app.get('/status', (req, res) => {
+  res.json({ mensagem: 'ok', timestamp: new Date()});
 });
 
 // inicia o servidor localmente — na Vercel essa parte é pulada
