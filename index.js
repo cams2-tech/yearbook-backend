@@ -2,7 +2,7 @@ import express from 'express'; // importa o Express usando ES Modules
 
 const app = express(); // cria a aplicação Express
 const PORT = 3000; // porta onde o servidor vai rodar localmente
-
+s
 new Date("2026-04-05T14:30:00.000Z"); 
 // rota GET na raiz — responde com JSON
 app.get('/', (req, res) => {
